@@ -1,0 +1,43 @@
+﻿@model Contact
+
+
+<div class="card radius-15">
+    <div class="card-body">
+        <div class="card-title">
+            <h4 class="mb-0">İletişim Mesajları</h4>
+        </div>
+        <hr>
+        <div class="table-responsive">
+            <table class="table mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col">Başlık</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Adress</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>@Model.Title</td>
+                        <td>@Model.Title</td>
+                        <td>@Model.Description</td>
+                        <td>@Model.ImageUrl</td>
+                        <td><a class="btn btn-warning">Düzenle</a></td>
+                        <td><a class="btn btn-danger">Sil</a></td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+
+            <a class="btn btn-warning"
+               href="/Management/Contact/Edit/@Model.Id">Düzenle</a>
+
+            <br />
+        </div>
+    </div>
+</div>
